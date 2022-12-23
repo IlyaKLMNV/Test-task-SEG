@@ -1,0 +1,113 @@
+header
+	position: relative
+	height: 685px
+	margin-bottom: 118px
+
+	.rectangles
+		position: absolute
+		top: 0
+		right: 0
+		width: 1221px
+		height: 644px
+		display: grid
+		grid-template-columns: repeat(4, 1fr)
+		grid-template-rows: repeat(2, 1fr)
+
+		.rectangle--border-right
+			border-right: 4px solid #ffffffa6
+		
+		.rectangle--border-right-top
+			border-right: 4px solid #ffffffa6
+			border-top: 4px solid #ffffffa6
+		
+		.rectangle--border-top
+			border-top: 4px solid #ffffffa6
+
+		.rectangle--white
+				background-color: #ffffff
+				
+	.video
+		width: 1220px
+		height: 644px
+		position: absolute
+		top: 0
+		right: 0
+		z-index: -1
+		overflow: hidden
+			
+		&_back
+			width: 1400px
+			height: 966px
+			transform: rotate(-1deg) translate(-70px, -120px)
+			z-index: -10
+
+	.container
+
+		nav
+			padding: 36px 0
+			display: grid
+			grid-template-columns: 3fr 1fr
+			grid-gap: 0px 306px
+			position: relative
+			z-index: 10
+
+			.links
+				display: flex
+				justify-content: space-between
+				align-items: center
+				text-transform: uppercase
+				font-weight: 500
+				font-size: 12px
+				line-height: 15px
+				letter-spacing: 0.16em
+				
+				a
+					display: block
+					color: #FFFFFF
+					text-decoration: none
+
+					&:hover
+						text-decoration: underline
+
+			.phone
+				font-weight: 600
+				font-size: 20px
+				line-height: 24px
+				letter-spacing: 0.03em
+				text-transform: uppercase
+				color: #ffffff
+
+		.logo-and-description
+			position: relative
+			padding-top: 145px
+			width: 591px
+			height: 331px
+			z-index: 10
+
+			.logo
+				margin-bottom: 32px
+			
+			.description 
+
+				h1
+					font-weight: 700
+					font-size: 38px
+					line-height: 46px
+					letter-spacing: 0.16em
+					text-transform: uppercase
+					margin-bottom: 29px
+					color: #2C3F68
+
+				p
+					font-weight: 600
+					font-size: 20px
+					line-height: 32px
+					color: #3F3F3F
+
+.shadow 
+	position: absolute
+	top: 0
+	left: 0
+	height: 378px
+	width: 100%
+	background: linear-gradient(180deg, #000000 -123.77%, rgba(0, 0, 0, 0) 78.06%)

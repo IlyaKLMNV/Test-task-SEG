@@ -1,0 +1,52 @@
+footer 
+	.container
+		.columns-2-3
+			section.contacts
+			.contacts_image-logo 
+
+			.contacts_contact-information 
+				div адрес
+				p Москва, Звёздный б-р 10, стр. 1, к. 25
+				div для связи
+				p +7 (910) 333-35-75 #[span |]stroy_energogrupp@mail.ru
+
+			.contacts_rights 
+				p Все права защищены 2010 - 2022 © ООО «СтройЭнергоГРУПП»
+				p Политика обработки персональных данных
+			
+			.contacts_brand
+			
+				
+
+
+
+
+			form(class="callback__form sendler form_block", name="callback")
+				h3.callback__title Оставьте заявку
+
+				div(class="thirdrow-form")
+					div(form_block form_block--inputs)
+
+						label(class="fw-placeholder name")
+							input(class="fw-input Y-required" type="text" name="name")
+							span.placeholder Ваше имя
+							span.error-placeholder Введите Ваше имя
+
+						label(class="fw-placeholder phone")
+							input(class="fw-input Y-required" type="text" name="phone")
+							span.placeholder Номер телефона
+							span.error-placeholder Введите Ваше номер
+						
+					div(form_block form_block--textarea)
+						label(class="fw-placeholder textarea")
+							textarea(name="review" placeholder="Опишите Ваш вопрос или просьбу и удобное время для связи.")
+							span.placeholder Комментарий
+					
+					div(form_block form_block--checkbox)
+						input(class="checkbox Y-required" id="checkbox-home" type="checkbox")
+						label(for="checkbox-home")
+							p Я ознакомился и согласен с &nbsp; 
+							span.load--agreement правилами
+							<button class="btn">Отправить</button>
+
+		
