@@ -1,52 +1,55 @@
 footer 
+	.footer--shadow
+	.footer--bg-img
 	.container
 		.columns-2-3
-			section.contacts
-			.contacts_image-logo 
+			.contacts
+				img(class="contacts_image-logo" src="/images/footer/CustomerLogo.png", alt="CustomerLogo")
+				.contacts_contact-information 
+					div адрес
+					p Москва, Звёздный б-р 10, стр. 1, к. 25
+					div для связи
+					p +7 (910) 333-35-75 &nbsp #[span |] &nbspstroy_energogrupp@mail.ru
+				.contacts_rights 
+					p Все права защищены 2010 - 2022 © ООО «СтройЭнергоГРУПП»
+					a(href="")  Политика обработки персональных данных
+				img(class="contacts_brand" src="/images/footer/RBandLogo.svg", alt="RBandLogo")
+			.form 
+				h3 Оставьте заявку
 
-			.contacts_contact-information 
-				div адрес
-				p Москва, Звёздный б-р 10, стр. 1, к. 25
-				div для связи
-				p +7 (910) 333-35-75 #[span |]stroy_energogrupp@mail.ru
-
-			.contacts_rights 
-				p Все права защищены 2010 - 2022 © ООО «СтройЭнергоГРУПП»
-				p Политика обработки персональных данных
-			
-			.contacts_brand
-			
-				
-
-
-
-
-			form(class="callback__form sendler form_block", name="callback")
-				h3.callback__title Оставьте заявку
-
-				div(class="thirdrow-form")
-					div(form_block form_block--inputs)
-
-						label(class="fw-placeholder name")
-							input(class="fw-input Y-required" type="text" name="name")
-							span.placeholder Ваше имя
-							span.error-placeholder Введите Ваше имя
-
-						label(class="fw-placeholder phone")
-							input(class="fw-input Y-required" type="text" name="phone")
-							span.placeholder Номер телефона
-							span.error-placeholder Введите Ваше номер
-						
-					div(form_block form_block--textarea)
-						label(class="fw-placeholder textarea")
-							textarea(name="review" placeholder="Опишите Ваш вопрос или просьбу и удобное время для связи.")
-							span.placeholder Комментарий
+				form(id="form" action="#") 
+					.form_validation
 					
-					div(form_block form_block--checkbox)
-						input(class="checkbox Y-required" id="checkbox-home" type="checkbox")
-						label(for="checkbox-home")
-							p Я ознакомился и согласен с &nbsp; 
-							span.load--agreement правилами
-							<button class="btn">Отправить</button>
+						label(class="fw-placeholder" for="name") 
+							input(class="form-block input_name Y-required" type="text" name="name")
+							div.placeholder
+								div.left-border
+								div.border-name Ваше имя
+								div.right-border
+							span(class="placeholder_bottom-text") Введите ваше имя
 
-		
+						label(class="fw-placeholder" for="phone") 
+							input(class="form-block input_phone Y-required" type="number" name="phone")
+							div.placeholder
+								div.left-border
+								div.border-phone Номер телефона
+								div.right-border
+							span(class="placeholder_bottom-text") Введите ваш номер
+
+					div(class="form_textarea")
+						label(class="fw-placeholder" for="textarea") 
+							textarea(name="textarea" placeholder="Опишите Ваш вопрос или просьбу и удобное время для связи.") 
+							div.placeholder
+								div.left-border
+								div.border-comment Комментарий
+								div.right-border
+
+					.form_checkbox 
+						input(class="form-block input-checkbox Y-required" id="checkbox-home" type="checkbox" )
+						label(class="fw-placeholder checkbox_label" for="checkbox-home") Я ознакомился и согласен с &nbsp #[span(class="load--agreement") правилами]
+
+						button(class="btn" type="submit") Отправить
+
+
+			
+			

@@ -1,7 +1,93 @@
 .motivation
+	position: relative
 	width: 100vw
+	height: 456px
 	background-image: url(/images/motivation/bg.png)
+	background-repeat: no-repeat
+	background-size: 2000px 1426px
+	background-position: center -305px
+	margin-bottom: 85px
 
+	&--shadow
+		position: absolute
+		width: 100%
+		height: 100%
+		background: rgba(0, 0, 0, 0.5)
+		
 	&_columns
+		position: relative
+		padding: 81px 0px
 		display: grid
 		grid-template-columns: repeat(3, 1fr)
+		grid-template-rows: 1fr 1fr 2fr
+		grid-auto-flow: column
+		grid-column-gap: 56px
+		grid-row-gap: 8px
+		color: #ffffff
+
+		&_tower
+
+			position: relative
+			width: 43px
+			height: 65px
+
+			&--img
+				position: absolute
+				width: 100%
+				height: 100%
+
+			&--point
+				position: absolute
+				bottom: 16px
+				right: 2px
+				z-index: 0
+				width: 20px
+				height: 20px
+
+		&_super
+			position: relative
+			width: 67px
+			height: 51px
+
+			&--img
+				position: absolute
+				width: 100%
+				height: 100%
+
+			&--point
+				position: absolute
+				top: 0px
+				left: -7px
+				z-index: 0
+				width: 20px
+				height: 20px
+
+		&_location
+			position: relative
+			width: 37px
+			height: 59px
+
+			&--img
+				position: absolute
+				width: 100%
+				height: 100%
+
+			&--point
+				position: absolute
+				top: 0px
+				right: -8px
+				z-index: 0
+				width: 20px
+				height: 20px
+
+
+		h3
+			font-weight: 700
+			font-size: 20px
+			line-height: 28px
+
+		p
+			font-weight: 500
+			font-size: 16px
+			line-height: 26px
+

@@ -45,8 +45,7 @@
 			&:hover
 				text-decoration: underline
 
-
-		&__flex-container
+		&_flex-container
 			position: relative
 			z-index: 1
 			height: 100%
@@ -55,73 +54,103 @@
 			flex-direction: column
 			justify-content: end
 
-		.shadow
-			position: absolute
-			width: 100%
-			height: 100%
-			// transform: rotate(180deg)
-			background: linear-gradient(to bottom, #ffffff25 0%, #000000 99%)
-
-
-		&__construction
+		&_construction
+			position: relative
 			padding: 0px 26px 20px 23px
 			grid-column: 1 / 2
 			grid-row: 1 / 3
-			background-image: url(/images/lineOfBusiness/warehouse.png)
-			background-repeat: no-repeat
-			background-position: center
-			background-size: 850px 546px
 
-		&__crane
+			&_bg-image
+				position: absolute
+				z-index: -1
+				top: 0
+				left: 0
+				width: 100%
+				height: 100%
+				background-image: url(/images/lineOfBusiness/warehouse.png)
+				background-repeat: no-repeat
+				background-position: center
+				background-size: 850px 546px
+
+		&_crane
 			position: relative
 			margin-top: -37px
 			padding: 0px 16px 22px 23px
 			position: relative
 			grid-column: 2 / 3
 			grid-row: 1 / 2
+			background: linear-gradient(to bottom, #ffffff00 0%, #00000028 99%)
+			overflow: hidden
 			
-			.bg-image
+			&_bg-image
 				position: absolute
+				z-index: -1
 				top: 0
 				left: 0
+				width: 393px
+				height: 393px
 				transform: matrix(-1, 0, 0, 1, 0, 0) rotate(-2deg)
-				width: 100%
-				height: 100%
 				background-image: url(/images/lineOfBusiness/crane.png)
 				background-repeat: no-repeat
-				background-position: -75px 0px
+				background-position: 55px 0px
 				background-size: 393px 393px
 
-		&__electrician 
+		&_electrician 
 			position: relative
 			padding: 0px 43px 17px 25px
 			grid-column: 3 / 5
 			grid-row: 1 / 2
-			background-image: url(/images/lineOfBusiness/electrician.png)
-			background-repeat: no-repeat
-			background-position: -170px -120px 
-			background-size: 763px 510px
+			background: linear-gradient(to bottom, #ffffff00 0%, #00000028 99%)
 
-		&__fitter 
+			&_bg-image
+				position: absolute
+				z-index: -1
+				top: 0
+				left: 0
+				width: 100%
+				height: 100%
+				background-image: url(/images/lineOfBusiness/electrician.png)
+				background-repeat: no-repeat
+				background-position: -170px -120px 
+				background-size: 763px 510px
+
+		&_fitter 
 			position: relative
 			padding: 0px 17px 26px 24px
 			grid-column: 2 / 4
 			grid-row: 2 / 3
-			background-image: url(/images/lineOfBusiness/fitter.png)
-			background-repeat: no-repeat
-			background-position: center -250px
-			background-size: 772px 552px
+			background: linear-gradient(to bottom, #ffffff00 0%, #00000028 99%)
 
-			.shadow
-				transform: translate(0px, 36px)
-				height: 225px
-			
+			&_bg-image
+				position: absolute
+				z-index: -1
+				top: 0
+				left: 0
+				width: 100%
+				height: 100%
+				background-image: url(/images/lineOfBusiness/fitter.png)
+				background-repeat: no-repeat
+				background-position: center -250px
+				background-size: 772px 552px
 
-		&__design
+		&_design
+			position: relative
 			padding: 0px 13px 25px 24px
 			grid-column: 4 / 5
 			grid-row: 2 / 3
-			background-image: url(/images/lineOfBusiness/blueprints.png)
-			background-repeat: no-repeat
-			background-position: -170px -120px 
-			background-size: 763px 510px
+			background:#9D9D9D
+			overflow: hidden
+
+			&_bg-image
+				// overflow: visible
+				position: absolute
+				z-index: 0
+				top: -90px
+				left: -10px
+				width: 600px
+				height: 409px
+				transform: rotate(-18deg)
+				background-image: url(/images/lineOfBusiness/blueprints.png)
+				background-repeat: no-repeat
+				background-position: -30px -150px 
+				background-size: 600px 409px

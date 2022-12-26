@@ -1,9 +1,74 @@
-.card-columns
-	display: grid
-	grid-template-columns: repeat(2, 1fr)
+.realizedObjects
+	margin-bottom: 150px
 
-	.card-columns_column-left
-		background-image: url(/images/realizedObjects/counstruction.png)
+	&_tittle
+		display: flex
+		justify-content: space-between
+
+	h3
+		font-weight: 700
+		font-size: 22px
+		line-height: 26px
+		letter-spacing: 0.16em
+		text-transform: uppercase
+		color: #000000
+		margin-bottom: 49px
+
+	.card-columns
+		height: 530px
+		display: grid
+		grid-template-columns: repeat(2, 1fr)
+		grid-column-gap: 9px
+		margin-bottom: 26px
+
+		&_column-left
+			background-image: url(/images/realizedObjects/counstruction.png)
+			background-size: cover
+			background-position: center
+			background-repeat: no-repeat
+		
+		&_column-right
+			background-image: url(/images/realizedObjects/factory.png)
+			background-size: cover
+			background-position: center
+			background-repeat: no-repeat
+
+	.card-description 
+		display: grid
+		grid-template-columns: 70px 878px
+		grid-template-rows: 62px 26px
+		grid-column-gap: 17px
+		grid-row-gap: 15px
+
+		&_title-headline
+			font-weight: 600
+			font-size: 12px
+			line-height: 31px
+			letter-spacing: 0.08em
+			text-transform: uppercase
+			color: #000000
+
+		&_title-text
+			font-weight: 600
+			font-size: 20px
+			line-height: 31px
+			color: #000000
+
+
+		&_subtitle-headline
+			font-weight: 600
+			font-size: 12px
+			line-height: 26px
+			letter-spacing: 0.08em
+			text-transform: uppercase
+			color: #000000
+
+		&_subtitle-text
+			font-weight: 500
+			font-size: 16px
+			line-height: 26px
+			color: #000000
+
 	
-	.card-columns_column-right
-		background-image: url(/images/realizedObjects/factory.png)
+
+		
