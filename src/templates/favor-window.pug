@@ -1,0 +1,53 @@
+.favor-window
+	.favor-window_empty-container
+	.favor-window_container
+		.favor-window_container__x
+	
+		.favor-window_container__image
+		.favor-window_container__text
+			h3 Cтроительство
+			p Компания «СтройЭнергоГРУПП» выполняет монтаж систем вентиляции . Проектирование и установка осуществляются в соответствии с требованиями ГОСТ. Мы гарантируем бесперебойную и надежную работу оборудования.
+			p Стоимость монтажа вентиляционной системы определяется особенностями объекта, качеством и количеством использованного оборудования. Поэтому специалисты начинают работу с подробного изучения здания и составления индивидуального проекта с учетом технических условий на объекте.
+			p Если монтаж производится в эксплуатируемом здании, работы начинаются с демонтажа имеющейся системы кондиционирования и вентиляционного оборудования. В таком случае при расчете цены на монтаж вентиляции будет учтена стоимости демонтажа.
+
+			
+
+		.form
+			h3 Оставьте заявку
+
+			form(id="favorWindowForm" action="#")
+				.form_validation
+
+					label(class="fw-placeholder form-item--required" for="name")
+						input(class="form-block input_name Y-required" type="text" name="name")
+						div.placeholder
+							div.left-border
+							div.border-name Ваше имя
+							div.right-border
+						span(class="placeholder_bottom-text") Введите ваше имя
+
+					label(class="fw-placeholder form-item--required" for="phone")
+						input(class="form-block input_phone Y-required" type="tel" name="phone")
+						div.placeholder
+							div.left-border
+							div.border-phone Номер телефона
+							div.right-border
+						span(class="placeholder_bottom-text") Введите ваш номер
+
+				div(class="form_textarea")
+					label(class="fw-placeholder" for="textarea")
+						textarea(name="textarea" placeholder="Опишите Ваш вопрос или просьбу и удобное время для связи.")
+						div.placeholder
+							div.left-border
+							div.border-comment Комментарий
+							div.right-border
+
+				.form_checkbox
+					.form-item--required
+						input(class="form-block input-checkbox Y-required" id="checkbox-home" type="checkbox" )
+						label(class="fw-placeholder checkbox_label" for="checkbox-home") Я ознакомился и согласен с &nbsp #[span(class="load--agreement") правилами]
+
+					button(class="btn" type="submit") Отправить
+
+
+

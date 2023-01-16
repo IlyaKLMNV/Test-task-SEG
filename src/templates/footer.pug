@@ -1,26 +1,26 @@
-footer 
+footer
 	.footer--shadow
 	.footer--bg-img
 	.container
 		.columns-2-3
 			.contacts
 				img(class="contacts_image-logo" src="/images/footer/CustomerLogo.png", alt="CustomerLogo")
-				.contacts_contact-information 
+				.contacts_contact-information
 					div адрес
 					p Москва, Звёздный б-р 10, стр. 1, к. 25
 					div для связи
 					p +7 (910) 333-35-75 &nbsp #[span |] &nbspstroy_energogrupp@mail.ru
-				.contacts_rights 
+				.contacts_rights
 					p Все права защищены 2010 - 2022 © ООО «СтройЭнергоГРУПП»
 					a(href="")  Политика обработки персональных данных
 				img(class="contacts_brand" src="/images/footer/RBandLogo.svg", alt="RBandLogo")
-			.form 
+			.form
 				h3 Оставьте заявку
 
-				form(id="form" action="#") 
+				form(id="footerForm" action="#")
 					.form_validation
-					
-						label(class="fw-placeholder" for="name") 
+
+						label(class="fw-placeholder form-item--required" for="name")
 							input(class="form-block input_name Y-required" type="text" name="name")
 							div.placeholder
 								div.left-border
@@ -28,8 +28,8 @@ footer
 								div.right-border
 							span(class="placeholder_bottom-text") Введите ваше имя
 
-						label(class="fw-placeholder" for="phone") 
-							input(class="form-block input_phone Y-required" type="number" name="phone")
+						label(class="fw-placeholder form-item--required" for="phone")
+							input(class="form-block input_phone Y-required" type="tel" name="phone")
 							div.placeholder
 								div.left-border
 								div.border-phone Номер телефона
@@ -37,19 +37,19 @@ footer
 							span(class="placeholder_bottom-text") Введите ваш номер
 
 					div(class="form_textarea")
-						label(class="fw-placeholder" for="textarea") 
-							textarea(name="textarea" placeholder="Опишите Ваш вопрос или просьбу и удобное время для связи.") 
+						label(class="fw-placeholder" for="textarea")
+							textarea(name="textarea" placeholder="Опишите Ваш вопрос или просьбу и удобное время для связи.")
 							div.placeholder
 								div.left-border
 								div.border-comment Комментарий
 								div.right-border
 
-					.form_checkbox 
-						input(class="form-block input-checkbox Y-required" id="checkbox-home" type="checkbox" )
-						label(class="fw-placeholder checkbox_label" for="checkbox-home") Я ознакомился и согласен с &nbsp #[span(class="load--agreement") правилами]
+					.form_checkbox
+						.form-item--required
+							input(class="form-block input-checkbox Y-required" id="checkbox-home" type="checkbox" )
+							label(class="fw-placeholder checkbox_label" for="checkbox-home") Я ознакомился и согласен с &nbsp #[span(class="load--agreement") правилами]
 
 						button(class="btn" type="submit") Отправить
 
 
-			
-			
+

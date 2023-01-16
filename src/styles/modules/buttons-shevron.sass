@@ -1,6 +1,4 @@
 .buttons-shevron
-	border: 1px solid #c609ff
-
 	display: flex
 	justify-content: space-between
 	cursor: pointer
@@ -8,33 +6,44 @@
 	height: 30px
 	
 	&:hover
-		border: 1px solid #000000
+		// border: 1px solid #000000
 
 	&__left
-		border: 1px solid #000000
-
+		width: 30px
+		height: 30px
 		display: flex
 		align-items: center
 		justify-content: center
+		opacity: 0.4
+
+		&:hover, &:active
+			opacity: 1
 
 
 		> div
-			width: 22px
-			height: 22px
+			width: 30px
+			height: 30px
 			transform: rotate(180deg)
 			background-image: url(/images/shevron-right.svg)
 			background-size: contain
+			background-position: center
 			background-repeat: no-repeat
 
 	&__right
-		border: 1px solid #000000
+		width: 30px
+		height: 30px
 		display: flex
 		align-items: center
 		justify-content: center
+		opacity: 0.4
+
+		&:hover, &:active
+			opacity: 1
 		
 		> div
-			width: 22px
-			height: 22px
+			width: 30px
+			height: 30px
 			background-image: url(/images/shevron-right.svg)
 			background-size: contain
+			background-position: center
 			background-repeat: no-repeat

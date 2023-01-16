@@ -1,10 +1,13 @@
 .partners-columns
 	display: grid
-	grid-template-columns: 3fr 7fr
-	grid-column-gap: 62px
+	grid-template-columns: 318px 736px
+	grid-column-gap: 35px
 	margin-bottom: 98px
 
 	&_single-column
+		display: flex
+		flex-direction: column
+
 		h3
 			font-weight: 700
 			font-size: 22px
@@ -15,36 +18,42 @@
 			margin-bottom: 12px
 		
 		p
+			flex: 1 0 auto
 			font-weight: 500
 			font-size: 16px
 			line-height: 27px
 			color: #000000
-			margin-bottom: 80px
+			// margin-bottom: 80px
+
+	&--window
+		overflow: hidden
 
 	&_cards 
-		display: grid
-		grid-template-columns: repeat(3, 1fr)
-		grid-auto-flow: column
-		grid-column-gap: 25px
-
+		display: flex
+		transition: all 1s
+		padding: 5px 0
 		a
 			color: #000
 			text-decoration: none
 			&:hover
 				text-decoration: underline
-				
 
 		&_card
-			border: 1px solid #D8D8D8
+			min-width: 205px
+			min-height: 275px
+			box-shadow: 0px 0px 3px #000
 			display: flex
 			flex-direction: column
 			align-items: center
 			text-align: center
 			justify-content: space-between
 			padding: 14px 10px 23px 10px
+			margin-left: 20px
+			cursor: pointer
+			
 
 			&:hover
-				border: 1px solid #000000
+				box-shadow: 0px 0px 5px #000
 				
 			h3
 				font-weight: 600

@@ -35,16 +35,6 @@
 			line-height: 21px
 			color: #FFFFFF
 
-		a
-			display: block
-			padding-top: 10px
-			cursor: pointer
-			color: #fff
-			text-decoration: none
-
-			&:hover
-				text-decoration: underline
-
 		&_flex-container
 			position: relative
 			z-index: 1
@@ -56,9 +46,45 @@
 
 		&_construction
 			position: relative
-			padding: 0px 26px 20px 23px
+			padding: 0px 26px 50px 23px
 			grid-column: 1 / 2
 			grid-row: 1 / 3
+			transition: all 0.5s linear 0s
+			overflow: hidden
+
+			&--gray-bg
+				position: absolute
+				z-index: 10
+				top: 0
+				left: 0
+				right: 0
+				bottom: 0
+				background-color: #00000088
+				transform: translateY(100%)
+				display: flex
+				align-items: end
+
+				.more-button 
+					position: relative
+					font-size: 20px
+					width: 100%
+					height: 50px
+					text-align: left
+					background: transparent
+					border: none
+					outline: none
+					padding: 0
+					padding-left: 20px
+					padding-bottom: 10px
+					color: #fff
+					cursor: pointer
+					// transition: all 0.5s linear 0s
+
+			&:hover
+				.lineOfBusiness_columns_construction--gray-bg
+					transform: translateY(0)
+					transition: all 0.5s linear 0s
+
 
 			&_bg-image
 				position: absolute

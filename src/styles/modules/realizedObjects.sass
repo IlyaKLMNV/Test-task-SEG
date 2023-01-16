@@ -1,3 +1,6 @@
+.container
+	overflow: hidden
+	
 .realizedObjects
 	margin-bottom: 150px
 
@@ -14,7 +17,17 @@
 		color: #000000
 		margin-bottom: 49px
 
+	&_cards
+		display: flex
+		width: 1118px
+		transition: all 1s
+
+		&_card
+			// margin-right: 9px
+
+
 	.card-columns
+		width: 1118px
 		height: 530px
 		display: grid
 		grid-template-columns: repeat(2, 1fr)

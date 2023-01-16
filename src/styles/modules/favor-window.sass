@@ -1,0 +1,157 @@
+.open
+	transform: translateX(0vw) !important
+
+.favor-window 
+	position: fixed
+	// overflow-y: scroll
+	width: 100vw
+	height: 100%
+	z-index: 10
+	display: flex
+	top: 0
+	right: 0
+	transform: translateX(100vw)
+	
+
+	&_empty-container
+		flex: 1 1 0
+		background:#1818189a
+
+	&_container
+		overflow-y: scroll
+		flex: 0 0 776px
+		display: flex
+		flex-direction: column
+		// justify-content: space-between
+		background: #fff
+		transition: transform 1s
+
+		&__x
+			padding: 25px
+			position: absolute
+			top: 0px
+			right: 0px
+			width: 23px
+			height: 23px
+			background-image: url(/images/form/Vector.svg)
+			background-repeat: no-repeat
+			background-position: center
+			background-size: 23px 23px
+
+		&__image
+			min-height: 225px
+			background-image: url(/images/lineOfBusiness/warehouse.png)
+			background-repeat: no-repeat
+			background-position: 0px -200px
+			background-size: 776px 450px
+			margin-bottom: 48px
+		
+		&__text
+			padding: 0 40px
+			margin-bottom: 108px
+
+			h3
+				font-weight: 700
+				font-size: 24px
+				line-height: 170%
+				color: #000000
+				margin-bottom: 13px
+
+			p
+				font-weight: 500
+				font-size: 16px
+				line-height: 170%
+				margin-bottom: 24px
+
+		.form
+			padding: 0 50px
+			margin-bottom: 57px
+
+			h3
+				color: #000
+				font-weight: 700
+				font-size: 22px
+				line-height: 120%
+				letter-spacing: 0.16em
+				text-transform: uppercase
+				margin-bottom: 36px
+
+			form
+				.form_validation
+					.placeholder
+						color: #000000
+
+					.input_name
+						width: 310px
+						height: 50px
+						color: #000000
+						font-weight: 700
+
+					.input_phone
+						width: 310px
+						height: 50px
+						color: #000000
+						font-weight: 700
+
+					.placeholder
+						.border-name
+							padding: 4px
+							background-color: #fff
+							flex: 0 1 82px
+
+						.border-phone
+							padding: 4px
+							background-color: #fff
+							flex: 0 1 132px
+
+						.left-border
+							height: 1px
+							background-color: #000000
+							flex: 0 1 10px
+
+						.right-border
+							height: 1px
+							background-color: #000000
+							flex: 1 0 0
+							
+				.form-block
+					border: 1px solid #000
+					border-top: none
+
+				.form_textarea
+					margin-bottom: 39px
+					textarea
+						border: 1px solid #000000
+						border-top: none
+						width: 100%
+
+					.placeholder
+						.border-comment
+							color: #000000
+
+						.left-border
+							height: 1px
+							background-color: #000000
+							flex: 0 1 10px
+
+						.right-border
+							height: 1px
+							background-color: #000000
+							flex: 1 0 10px
+
+				.form_checkbox
+					display: grid
+					grid-template-columns:  300px auto
+					
+					.checkbox_label
+						color: #000
+
+					.checkbox_label::before
+						border: 1px solid #000
+
+					.btn
+						background: #2C3F68
+						color: #fff
+
+						&:active
+							background: #050505

@@ -4,18 +4,28 @@
 		transform: translate(-4px, 0px) 
 
 @media ( max-width: 1675px )
+	header
+		.container
+			.logo-and-description 
+				// width: 450px
+				.description 
+					h1 
+						font-size: 30px
+				p
+					font-size: 20px
+
 	.query_first--white
 		background-color: #ffffff
 		transform: translate(0px, 4px) scale(1, 1.1)
 
-		
-		
 
-@media ( max-width: 1229px )
-	
+@media ( max-width: 1264px )
+	.container
+		width: 939px !important
 
 	header
-		height: 418px
+		// height: 418px
+		// margin-bottom: 92px
 
 		.rectangles
 			width: 791px
@@ -26,56 +36,449 @@
 			height: 417px
 	
 		.container
-			width: 938px
-
 			nav
 				grid-column-gap: 124px
-
-
-				.links
 
 			.logo-and-description
 				width: 444px
 				padding-top: 22px
 
 				.description 
-
 					h1
 						font-size: 30px
 						margin-bottom: 0px
 
-					p
-						font-size: 16px
-						line-height: 26px
+				p
+					font-size: 16px
+					line-height: 26px
 
 	.about-company 
 		&_border-lines
-			border: none
+			border-top: none
+			border-bottom: none
+			
+			.container
+				.about-company_columns
+					display: flex
+					justify-content: space-between
 
-		.container
-			.about-company_columns
-				&__text
-					width: 617px
-	
-	.lineOfBusiness 
-		margin-bottom: 78px
+					&__text
+						width: 600px
 
-		&_columns
-
-			h3
-				font-size: 16px
-				line-height: 26px
-
-	.motivation
-		margin-bottom: 73px
-		&_columns
-			grid-column-gap: 23px
+					&__block-with-numbers
+						width: 300px
 
 	.realizedObjects
-		margin-bottom: 165px
-		.card-columns
-			height: 446px
+		.realizedObjects_cards
+			width: 939px
 
-	.partners-columns
+			&_card
+				width: 939px
+
+		.card-columns
+			width: 939px
+			height: 470px
+
+		.card-description 
+			display: grid
+			grid-template-columns: 70px 847px
+			grid-template-rows: 62px 26px
+			grid-column-gap: 17px
+			grid-row-gap: 15px
+
+	footer
+		.footer--shadow
+			position: absolute
+			width: 100%
+			height: 100%
+			background: linear-gradient(133.19deg, #373737 25.37%, #B0B0B0 137.3%)
+			transform: rotate(180deg)
+
+		.footer--bg-img
+			right: -492px
+
+		.columns-2-3
+			grid-template-columns: 338px 541px
+			grid-column-gap: 50px
+
+	.form
+		form
+		.form_validation
+			.input_name
+				width: 221px
+
+			.input_phone
+				width: 221px
+
+		.form_textarea
+			textarea
+				width: 505px
+
+
+@media ( max-width: 998px )
+	.container
+		width: 696px !important
+
+	header
+		position: relative
+		margin-bottom: 43px
+		display: flex
+		align-items: center
+
+		.rectangles
+			display: none
+					
+		.video
+			width: 100%
+			height: 300px
+			position: absolute
+			top: 0
+			right: 0
+			z-index: -1
+			overflow: hidden
+
+			&_back
+				width: 1000px
+				height: 759px
+				transform: rotate(-1deg) translate(0px, -185px)
+				z-index: -10
+
+		.container
+			
+			//навигационный блок с ссылками и телефоном
+			nav
+				grid-column-gap: 0
+				padding: 28px 0
+				display: flex
+				justify-content: center
+
+				//- Блок мобильного меню, появляется при разрешении меньше 744px
+				.mobile-navigation-bar
+					display: none
+
+				.links
+					width: 100%
+					display: flex
+					margin-right: 10px
+					
+				.phone
+					width: 190px
+					font-size: 14px
+
+			.logo-and-description
+				width: 575px
+				display: grid
+				grid-template-columns: 1fr 4fr
+				grid-template-rows: 1fr 1fr
+				align-items: center
+				justify-items: center
+				margin-top: 285px
+				margin: 285px auto 0
+
+				.logo
+					margin-bottom: 0
+
+					img
+						width: 80px
+						height: 80px
+				
+				.description 
+
+					h1
+						font-weight: 700
+						font-size: 30px
+						line-height: 37px
+						letter-spacing: 0.16em
+						text-transform: uppercase
+						margin-bottom: 0px
+						color: #2C3F68
+
+				p
+					grid-column: 1/3
+					text-align: center
+					font-weight: 600
+					font-size: 16px
+					line-height: 26px
+					color: #3F3F3F
+
+	.about-company 
+		margin-bottom: 43px
+
+		&_border-lines
+			margin-bottom: 0px
+			.container
+				.about-company_columns
+					display: flex
+					flex-direction: column
+					justify-content: space-between
+
+					&__text
+						width: 100%
+						margin-bottom: 40px
+
+						h2
+							margin-bottom: 22px
+							
+						p
+							margin-bottom: 12px
+
+					&__block-with-numbers
+						width: 100%
+
+						.number-text 
+							display: grid
+							grid-template-columns: repeat(3, 1fr)
+							grid-template-rows: repeat(2, 1fr)
+							grid-auto-flow: column
+							width: 100%
+
+							.counts
+								sup
+									font-size: 40px
+
+		.container
+			.disclaimer 
+				border: 2px solid transparent
+				border-image: linear-gradient(to right,#F9A97B 50%,  transparent 50%, transparent 50%, #C3825A 50%)
+				border-image-slice: 1
+				padding: 25px 216px 28px 32px
+
+				h3
+					font-weight: 600
+					font-size: 16px
+					line-height: 27px
+					color: #000000
+					margin-bottom: 12px
+
+				p
+					font-weight: 500
+					font-size: 14px
+					line-height: 22px
+					color: #3F3F3F
+					margin: 0px
+					padding: 0px
+					margin-bottom: 12px
+
+	.lineOfBusiness 
+		height: 100%
+		margin-bottom: 57px
 		
+		&_title 
+			h3
+				font-weight: 700
+				font-size: 22px
+				line-height: 37px
+				letter-spacing: 0.16em
+				text-transform: uppercase
+				color: #000000
+				margin-bottom: 47px
+
+		&_columns
+			height: 100%
+			display: block
+			b
+
+			&_flex-container
+
+			&_construction
+				height: 190px
+				margin-bottom: 30px
+				padding: 0px 43px 17px 25px
+				background-color: #00000057
+				
+				&_bg-image
+					position: absolute
+					z-index: -1
+					top: 0
+					left: 0
+					width: 100%
+					height: 100%
+					background-image: url(/images/lineOfBusiness/warehouse.png)
+					background-repeat: no-repeat
+					background-position: 0px -220px
+					background-size: 696px auto
+
+			&_crane
+				height: 190px
+				position: relative
+				margin-top: 0
+				margin-bottom: 30px
+				background-color: #00000057
+				
+				&_bg-image
+					position: absolute
+					z-index: -1
+					top: 0
+					left: 0
+					width: 100%
+					height: 100%
+					transform: none
+					background-image: url(/images/lineOfBusiness/agrimotor.png)
+					background-repeat: no-repeat
+					background-position: center
+					background-size: 696px auto
+
+			&_electrician 
+				height: 190px
+				position: relative
+				padding: 0px 43px 17px 25px
+				margin-bottom: 30px
+				background-color: #00000057
+
+				&_bg-image
+					transform: matrix(-1, 0, 0, 1, 0, 0)
+					background-position: 0px -160px 
+					background-size: 900px auto
+
+			&_fitter 
+				height: 190px
+				margin-bottom: 30px
+				background-color: #00000057
+
+				&_bg-image
+					transform: matrix(-1, 0, 0, 1, 0, 0)
+					background-position: 0px -210px
+					background-size: 900px auto
+
+			&_design
+				height: 190px
+				background: #00000057
+
+				&_bg-image
+					position: absolute
+					z-index: -1
+					top: 0px
+					left: 0px
+					width: 100%
+					height: 100%
+					transform: rotate(0deg)
+					background-image: url(/images/lineOfBusiness/design.png)
+					background-repeat: no-repeat
+					background-position: -180px -350px 
+					background-size: 900px auto
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
+
+@media ( max-width: 744px )
+
+	.container
+		width: 696px !important
+
+	header
+		position: relative
+		// height: 685px
+		margin-bottom: 64px
+		display: flex
+		flex-direction: column
+		align-items: center
+
+		.rectangles
+			display: none
+
+		.video
+			width: 100%
+			height: 300px
+			position: absolute
+			top: 0
+			right: 0
+			z-index: -1
+			overflow: hidden
+
+			// Фоновое изображение, которое выступает вместо видео
+			&_back
+				width: 100%
+				// height: 300px
+				transform: rotate(-1deg) translate(-70px, -120px)
+				z-index: -10
+
+		.container
+			
+			//навигационный блок с ссылками и телефоном
+			nav
+				border: 1px solid #000
+
+				padding: 0
+				display: flex
+				flex-direction: column
+				align-items: center
+				justify-content: space-between
+				position: relative
+				z-index: 10
+
+
+
+				.links
+					display: block
+					justify-content: space-between
+					align-items: center
+					text-transform: uppercase
+					font-weight: 500
+					font-size: 12px
+					line-height: 15px
+					letter-spacing: 0.16em
+					
+					a
+						display: block
+						color: #FFFFFF
+						text-decoration: none
+
+						&:hover
+							text-decoration: underline
+
+				.phone
+					font-weight: 600
+					font-size: 20px
+					line-height: 24px
+					letter-spacing: 0.03em
+					text-transform: uppercase
+					color: #ffffff
+
+			.logo-and-description
+				position: relative
+				padding-top: 145px
+				width: 591px
+				z-index: 10
+
+				.logo
+					margin-bottom: 32px
+				
+				.description 
+
+					h1
+						font-weight: 700
+						font-size: 38px
+						line-height: 46px
+						letter-spacing: 0.16em
+						text-transform: uppercase
+						margin-bottom: 29px
+						color: #2C3F68
+
+					p
+						font-weight: 600
+						font-size: 20px
+						line-height: 32px
+						color: #3F3F3F
+
+	.shadow 
+		position: absolute
+		top: 0
+		left: 0
+		height: 378px
+		width: 100%
+		background: linear-gradient(180deg, #000000 -123.77%, rgba(0, 0, 0, 0) 78.06%)
 
