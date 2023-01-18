@@ -1,15 +1,15 @@
 @media ( max-width: 1870px )
 	.query_sixth--white
 		background-color: #ffffff
-		transform: translate(-4px, 0px) 
+		transform: translate(-4px, 0px)
 
 @media ( max-width: 1675px )
 	header
 		.container
-			.logo-and-description 
+			.logo-and-description
 				// width: 450px
-				.description 
-					h1 
+				.description
+					h1
 						font-size: 30px
 				p
 					font-size: 20px
@@ -18,15 +18,11 @@
 		background-color: #ffffff
 		transform: translate(0px, 4px) scale(1, 1.1)
 
-
 @media ( max-width: 1264px )
 	.container
 		width: 939px !important
 
 	header
-		// height: 418px
-		// margin-bottom: 92px
-
 		.rectangles
 			width: 791px
 			height: 417px
@@ -34,7 +30,7 @@
 		.video
 			width: 790px
 			height: 417px
-	
+
 		.container
 			nav
 				grid-column-gap: 124px
@@ -43,7 +39,7 @@
 				width: 444px
 				padding-top: 22px
 
-				.description 
+				.description
 					h1
 						font-size: 30px
 						margin-bottom: 0px
@@ -52,11 +48,11 @@
 					font-size: 16px
 					line-height: 26px
 
-	.about-company 
+	.about-company
 		&_border-lines
 			border-top: none
 			border-bottom: none
-			
+
 			.container
 				.about-company_columns
 					display: flex
@@ -79,7 +75,7 @@
 			width: 939px
 			height: 470px
 
-		.card-description 
+		.card-description
 			display: grid
 			grid-template-columns: 70px 847px
 			grid-template-rows: 62px 26px
@@ -87,33 +83,52 @@
 			grid-row-gap: 15px
 
 	footer
-		.footer--shadow
-			position: absolute
-			width: 100%
-			height: 100%
-			background: linear-gradient(133.19deg, #373737 25.37%, #B0B0B0 137.3%)
-			transform: rotate(180deg)
+		.container
+			.columns-2-3
+				grid-column-gap: 50px
 
-		.footer--bg-img
-			right: -492px
+				.form
+					form
+						.form_validation
+							// display: flex
+							// justify-content: space-between
+							// margin-bottom: 40px
 
-		.columns-2-3
-			grid-template-columns: 338px 541px
-			grid-column-gap: 50px
+							.input_name
+								width: 241px
+								height: 50px
 
-	.form
-		form
-		.form_validation
-			.input_name
-				width: 221px
+							.input_phone
+								width: 241px
+								height: 50px
 
-			.input_phone
-				width: 221px
+							.placeholder
+								width: 100%
 
-		.form_textarea
-			textarea
-				width: 505px
+						.form_textarea
+							height: 125px
+							margin-bottom: 39px
+							position: relative
 
+							textarea
+								width: 100%
+
+						.form_checkbox
+							display: grid
+							grid-template-columns:  300px auto
+							align-items: center
+							position: relative
+							cursor: pointer
+
+							.load--agreement
+								position: absolute
+								top: 18px
+								left: 38px
+								text-decoration: underline
+
+							.btn
+								width: 216px
+								height: 48px
 
 @media ( max-width: 998px )
 	.container
@@ -127,7 +142,7 @@
 
 		.rectangles
 			display: none
-					
+
 		.video
 			width: 100%
 			height: 300px
@@ -144,7 +159,7 @@
 				z-index: -10
 
 		.container
-			
+
 			//навигационный блок с ссылками и телефоном
 			nav
 				grid-column-gap: 0
@@ -160,7 +175,7 @@
 					width: 100%
 					display: flex
 					margin-right: 10px
-					
+
 				.phone
 					width: 190px
 					font-size: 14px
@@ -181,8 +196,8 @@
 					img
 						width: 80px
 						height: 80px
-				
-				.description 
+
+				.description
 
 					h1
 						font-weight: 700
@@ -201,7 +216,7 @@
 					line-height: 26px
 					color: #3F3F3F
 
-	.about-company 
+	.about-company
 		margin-bottom: 43px
 
 		&_border-lines
@@ -218,14 +233,14 @@
 
 						h2
 							margin-bottom: 22px
-							
+
 						p
 							margin-bottom: 12px
 
 					&__block-with-numbers
 						width: 100%
 
-						.number-text 
+						.number-text
 							display: grid
 							grid-template-columns: repeat(3, 1fr)
 							grid-template-rows: repeat(2, 1fr)
@@ -237,9 +252,9 @@
 									font-size: 40px
 
 		.container
-			.disclaimer 
+			.disclaimer
 				border: 2px solid transparent
-				border-image: linear-gradient(to right,#F9A97B 50%,  transparent 50%, transparent 50%, #C3825A 50%)
+				border-image: linear-gradient(to right,#F9A97B 50%, transparent 50%, transparent 50%, #C3825A 50%)
 				border-image-slice: 1
 				padding: 25px 216px 28px 32px
 
@@ -259,11 +274,11 @@
 					padding: 0px
 					margin-bottom: 12px
 
-	.lineOfBusiness 
+	.lineOfBusiness
 		height: 100%
 		margin-bottom: 57px
-		
-		&_title 
+
+		&_title
 			h3
 				font-weight: 700
 				font-size: 22px
@@ -285,7 +300,7 @@
 				margin-bottom: 30px
 				padding: 0px 43px 17px 25px
 				background-color: #00000057
-				
+
 				&_bg-image
 					position: absolute
 					z-index: -1
@@ -304,7 +319,7 @@
 				margin-top: 0
 				margin-bottom: 30px
 				background-color: #00000057
-				
+
 				&_bg-image
 					position: absolute
 					z-index: -1
@@ -318,7 +333,7 @@
 					background-position: center
 					background-size: 696px auto
 
-			&_electrician 
+			&_electrician
 				height: 190px
 				position: relative
 				padding: 0px 43px 17px 25px
@@ -327,10 +342,10 @@
 
 				&_bg-image
 					transform: matrix(-1, 0, 0, 1, 0, 0)
-					background-position: 0px -160px 
+					background-position: 0px -160px
 					background-size: 900px auto
 
-			&_fitter 
+			&_fitter
 				height: 190px
 				margin-bottom: 30px
 				background-color: #00000057
@@ -354,131 +369,535 @@
 					transform: rotate(0deg)
 					background-image: url(/images/lineOfBusiness/design.png)
 					background-repeat: no-repeat
-					background-position: -180px -350px 
+					background-position: -180px -350px
 					background-size: 900px auto
 
+	.motivation
+		position: relative
+		width: 100vw
+		height: 100%
+		background-position: 0px 0px
+		background-size: 1100px auto
+		margin-bottom: 85px
+		display: flex
+		align-items: center
 
+		&_columns
+			padding: 81px 0px 61px
+			display: block
+			grid-column-gap: 0px
 
+			p
+				grid-column: 1/3
 
+			&_tower
+				display: grid
+				grid-template-columns: auto 600px
+				grid-template-rows: 65px 54px
+				align-items: center
+				margin-bottom: 39px
+				grid-row-gap: 19px
+				opacity: 0
 
+				&__images
+					position: relative
+					width: 43px
+					height: 65px
+					margin-bottom: 0px
+					justify-self: center
 
+			&_super
+				display: grid
+				grid-template-columns: auto 600px
+				grid-template-rows: 65px 54px
+				align-items: center
+				grid-row-gap: 19px
+				margin-bottom: 39px
+				opacity: 0
 
+				&__images
+					position: relative
+					width: 67px
+					height: 51px
+					margin-bottom: 0px
+					justify-self: center
 
+			&_location
+				display: grid
+				grid-template-columns: auto 600px
+				grid-template-rows: 65px 54px
+				align-items: center
+				grid-row-gap: 19px
+				margin-bottom: 39px
+				opacity: 0
 
+				&__images
+					position: relative
+					width: 37px
+					height: 59px
+					justify-self: center
+					margin-bottom: 0px
 
+	.realizedObjects
+		margin-bottom: 98px
 
+		.realizedObjects_cards
+			width: 696px
 
+			&_card
+				width: 696px
 
+		.card-columns
+			width: 696px
+			height: 350px
 
+		.card-description
+			display: block
 
+			&_title-text
+				font-size: 16px
+				line-height: 25px
+				margin-bottom: 20px
 
+	.partners-columns
+		display: block
+		margin-bottom: 72px
+
+		&_single-column
+
+			h3
+				margin-bottom: 12px
 			
+			p
+				margin-bottom: 20px
+
+			.buttons-shevron
+				margin-bottom: 20px
+
+	footer
+		.container
+			.columns-2-3
+				grid-column-gap: 50px
+
+				.contact-information
+					&_image-logo
+						width: 224px
+						height: 58px
+						margin-bottom: 35px
+
+					div
+						font-weight: 500
+						font-size: 10px
+						line-height: 15px
+						letter-spacing: 0.08em
+						text-transform: uppercase
+						color: #D8D8D8
+						margin-bottom: 4px
+
+					p
+						font-weight: 500
+						font-size: 16px
+						line-height: 27px
+						color: #FFFFFF
+						margin-bottom: 18px
+
+				.form
+					form
+						.form_validation
+							display: block
+
+							.input_name
+								width: 100%
+								height: 50px
+								margin-bottom: 30px
+
+							.input_phone
+								width: 100%
+								height: 50px
+
+							.placeholder
+								width: 100%
+
+						.form_textarea
+							textarea
+								width: 100%
+
+						.form_checkbox
+							display: grid
+							grid-template-columns:  174px auto
+
+							.load--agreement
+								position: absolute
+								top: 18px
+								left: 38px
+								text-decoration: underline
+
+							.btn
+								width: 168px
+								height: 48px
 
 @media ( max-width: 744px )
-
 	.container
 		width: 696px !important
 
 	header
-		position: relative
-		// height: 685px
-		margin-bottom: 64px
-		display: flex
-		flex-direction: column
-		align-items: center
-
-		.rectangles
-			display: none
-
-		.video
-			width: 100%
-			height: 300px
-			position: absolute
-			top: 0
-			right: 0
-			z-index: -1
-			overflow: hidden
-
-			// Фоновое изображение, которое выступает вместо видео
-			&_back
-				width: 100%
-				// height: 300px
-				transform: rotate(-1deg) translate(-70px, -120px)
-				z-index: -10
-
 		.container
-			
-			//навигационный блок с ссылками и телефоном
-			nav
-				border: 1px solid #000
+			width: 100% !important
 
-				padding: 0
-				display: flex
-				flex-direction: column
-				align-items: center
-				justify-content: space-between
-				position: relative
-				z-index: 10
+			.mobile-navigation-bar
+				display: block
 
-
-
-				.links
-					display: block
+				&_header
+					position: fixed
+					top: 0
+					z-index: 10
+					display: flex
 					justify-content: space-between
 					align-items: center
-					text-transform: uppercase
-					font-weight: 500
-					font-size: 12px
-					line-height: 15px
+					width: 100%
+					height: 70px
+					padding: 0 10px
+					font-weight: 700
+					font-size: 22px
+					line-height: 20px
 					letter-spacing: 0.16em
-					
-					a
-						display: block
-						color: #FFFFFF
-						text-decoration: none
-
-						&:hover
-							text-decoration: underline
-
-				.phone
-					font-weight: 600
-					font-size: 20px
-					line-height: 24px
-					letter-spacing: 0.03em
 					text-transform: uppercase
-					color: #ffffff
+					color: #2C3F68
+					background: #FFFFFF
+					border-bottom: 1px solid #000
 
+					button
+						width: 50px
+						height: 47px
+						padding: 5px
+
+						div
+							border-bottom: 2px solid #000
+							transition: all 0.3s linear 0s
+						
+							&:nth-child(1)
+								transform: translateY(-10px)
+
+							&:nth-child(3)
+								transform: translateY(10px)
+
+					.button-x 
+						div
+							&:nth-child(1)
+								transform: translateY(2px) rotate(45deg)
+
+							&:nth-child(2)
+								opacity: 0
+
+							&:nth-child(3)
+								transform: translateY(-2px) rotate(-45deg)
+
+				&_menu--wrapper
+					position: fixed
+					top: 70px
+					z-index: 10
+					width: 100vw
+					height: 100vh
+					background: #00000069
+					display: none
+				
+				&_menu_content
+					top: 70px
+					transform: translateX(100vw)
+					position: fixed
+					right: 0
+					z-index: 10
+					display: grid
+					grid-template-rows: 7fr 1fr
+					align-items: center
+					justify-content: center
+					width: 370px
+					height: 100vh
+					background: #ffffff
+					transition: all 0.3s linear 0s
+					
+
+					&__links
+						height: 300px
+						display: flex
+						flex-direction: column
+						justify-content: space-around
+						align-items: center
+
+						a
+							text-decoration: none
+							font-weight: 500
+							font-size: 20px
+							line-height: 135%
+							text-align: center
+							letter-spacing: 0.12em
+							text-transform: uppercase
+							color: #000000
+
+					&__footer
+						font-weight: 600
+						font-size: 24px
+						line-height: 142%
+						text-align: center
+						letter-spacing: 0.08em
+						text-transform: uppercase
+						color: #2C3F68
+						margin-bottom: 80px
+
+			nav
+				display: none
+
+	.favor-window
+		&_container
+			flex: 0 0 341px
+
+			&__text
+				padding: 0 20px
+				margin-bottom: 20px
+
+			.form
+				padding: 0 10px
+				margin-bottom: 17px
+
+				form
+					.form_validation
+						display: block
+
+						.placeholder
+							color: #000000
+
+						.input_name
+							width: 100%
+							height: 50px
+							color: #000000
+							font-weight: 700
+							margin-bottom: 40px
+
+						.input_phone
+							width: 100%
+							height: 50px
+							color: #000000
+							font-weight: 700
+
+					.form-block
+						border: 1px solid #000
+						border-top: none
+
+					.form_textarea
+						margin-bottom: 39px
+
+					.form_checkbox
+						display: grid
+						grid-template-columns: 1fr
+						grid-row-gap: 10px
+						justify-content: center
+
+						.load--agreement
+							text-decoration: underline
+						
+						.btn
+							width: 186px
+							background: #2C3F68
+							color: #fff
+							justify-self: center
+
+@media ( max-width: 700px )
+	.container
+		width: 341px !important
+
+	header
+		.video
+			&_back
+				width: 110vw
+				height: auto
+				transform: rotate(-1deg) translate(-10px, 0px)
+		
+		.container
+			.mobile-navigation-bar
+				&_header
+					font-size: 12px
+					line-height: 17px
+					letter-spacing: 0.0em
+
+					button
+						width: 40px
+						height: 37px
+						padding: 5px
+
+			nav
+				display: none
+			
 			.logo-and-description
-				position: relative
-				padding-top: 145px
-				width: 591px
-				z-index: 10
+				width: 370px
+				display: grid
+				grid-template-columns: 1fr 4fr
+				grid-template-rows: 1fr 1fr
+				align-items: center
+				justify-items: center
 
 				.logo
-					margin-bottom: 32px
-				
-				.description 
+					margin-bottom: 0
 
+					img
+						width: 51px
+						height: 51px
+
+				.description
 					h1
 						font-weight: 700
-						font-size: 38px
-						line-height: 46px
+						font-size: 18px
+						line-height: 22px
 						letter-spacing: 0.16em
 						text-transform: uppercase
-						margin-bottom: 29px
+						margin-bottom: 0px
 						color: #2C3F68
 
+				p
+					grid-column: 1/3
+					text-align: center
+					font-weight: 600
+					font-size: 16px
+					line-height: 26px
+					color: #3F3F3F
+			
+	.about-company
+		&_border-lines
+			.container
+				.about-company_columns
+					&__text
+						
+					&__block-with-numbers
+						.number-text 
+							grid-template-columns: 1fr
+							grid-template-rows: repeat(6, 1fr)
+							grid-auto-flow: row
+
+		.container
+			.disclaimer 
+				padding: 20px
+
+	.motivation
+		background-position: -400px 0px
+		background-size: 1200px auto
+
+		&_columns
+			padding: 41px 0px 31px
+			display: block
+			grid-column-gap: 0px
+
+			p
+				grid-column: 1/3
+
+			&_tower
+				grid-template-rows: 65px auto
+				grid-template-columns: auto 270px
+
+			&_super
+				grid-template-rows: 65px auto
+				grid-template-columns: auto 270px
+				grid-row-gap: 29px
+
+			&_location
+				grid-template-rows: 65px auto
+				grid-template-columns: auto 270px
+				grid-row-gap: 25px
+
+	.realizedObjects
+		margin-bottom: 50px
+
+		.realizedObjects_cards
+			width: 341px
+
+			&_card
+				width: 341px
+
+		.card-columns
+			width: 341px
+			height: 180px
+
+	footer
+		.footer--bg-img
+			opacity: 0.5
+			position: absolute
+			bottom: 0px
+			right: -192px
+			width: 1260px
+			height: 100%
+			background-image: url("/images/footer/plant.png")
+			background-size: cover
+			background-repeat: no-repeat
+		
+		.container
+			.columns-2-3
+				padding-top: 35px
+				grid-column-gap: 0px
+				grid-template-columns: 1fr
+				grid-template-rows: repeat(4, auto)
+				grid-auto-flow: row
+				grid-row-gap: 35px
+
+				.contact-information
+					text-align: center
+
+					&_image-logo
+						width: 224px
+						height: 58px
+						margin-bottom: 29px
+
+					div
+						font-weight: 500
+						font-size: 10px
+						line-height: 15px
+						letter-spacing: 0.08em
+						text-transform: uppercase
+						color: #D8D8D8
+						margin-bottom: 14px
+
 					p
-						font-weight: 600
-						font-size: 20px
-						line-height: 32px
-						color: #3F3F3F
+						font-weight: 500
+						font-size: 16px
+						line-height: 27px
+						color: #FFFFFF
+						margin-bottom: 18px
+				
+				.contact-rights
+					text-align: center
 
-	.shadow 
-		position: absolute
-		top: 0
-		left: 0
-		height: 378px
-		width: 100%
-		background: linear-gradient(180deg, #000000 -123.77%, rgba(0, 0, 0, 0) 78.06%)
+				.form
+					grid-row: 2 / 4
 
+					h3
+						text-align: center
+
+					form
+						.form_validation
+							display: block
+
+							.input_name
+								width: 100%
+								height: 50px
+								margin-bottom: 30px
+
+							.input_phone
+								width: 100%
+								height: 50px
+
+							.placeholder
+								width: 100%
+
+						.form_textarea
+							textarea
+								width: 100%
+
+						.form_checkbox
+							display: grid
+							grid-template-columns: auto
+							grid-row-gap: 15px
+
+							.load--agreement
+								position: static
+
+							.btn
+								justify-self: center
+								width: 168px
+								height: 48px

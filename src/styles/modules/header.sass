@@ -44,7 +44,8 @@ header
 			z-index: -10
 
 	.container
-		
+		.mobile-navigation-bar
+				display: none
 		//навигационный блок с ссылками и телефоном
 		nav
 			padding: 36px 0
@@ -53,11 +54,7 @@ header
 			grid-column-gap: 306px
 			position: relative
 			z-index: 10
-
-			//- Блок мобильного меню, появляется при разрешении меньше 744px
-			.mobile-navigation-bar
-				display: none
-
+				
 			.links
 				display: flex
 				justify-content: space-between
@@ -88,7 +85,6 @@ header
 			position: relative
 			padding-top: 145px
 			width: 591px
-			z-index: 10
 
 			.logo
 				margin-bottom: 32px

@@ -14,12 +14,24 @@ header
 		div(class="rectangle--border-top") 
 	
 	.container 
-		nav
-			//- Блок мобильного меню, появляется при разрешении меньше 744px
-			div.mobile-navigation-bar
+		div.mobile-navigation-bar
+			div.mobile-navigation-bar_header
 				h1 Стройэнергогрупп
 				button(id="mobile-navigation-button")
-	
+					div 
+					div 
+					div 
+			div.mobile-navigation-bar_menu--wrapper
+			div.mobile-navigation-bar_menu_content
+				div.mobile-navigation-bar_menu_content__links
+					a(href="") О компании
+					a(href="") Услуги
+					a(href="") Объекты
+					a(href="") Нам доверяют
+					a(href="") Контакты
+				div.mobile-navigation-bar_menu_content__footer +7 (910) 333-35-75
+
+		nav
 			div.links
 				a(href="") О компании
 				a(href="") Услуги

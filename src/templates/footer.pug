@@ -3,17 +3,19 @@ footer
 	.footer--bg-img
 	.container
 		.columns-2-3
-			.contacts
-				img(class="contacts_image-logo" src="/images/footer/CustomerLogo.png", alt="CustomerLogo")
-				.contacts_contact-information
-					div адрес
-					p Москва, Звёздный б-р 10, стр. 1, к. 25
-					div для связи
-					p +7 (910) 333-35-75 &nbsp #[span |] &nbspstroy_energogrupp@mail.ru
-				.contacts_rights
-					p Все права защищены 2010 - 2022 © ООО «СтройЭнергоГРУПП»
-					a(href="")  Политика обработки персональных данных
-				img(class="contacts_brand" src="/images/footer/RBandLogo.svg", alt="RBandLogo")
+			.contact-information
+				img(class="contact-information_image-logo" src="/images/footer/CustomerLogo.png", alt="CustomerLogo")
+				div адрес
+				p Москва, Звёздный б-р 10, стр. 1, к. 25
+				div для связи
+				p +7 (910) 333-35-75 &nbsp #[span |] &nbspstroy_energogrupp@mail.ru
+
+			.contact-rights
+				p Все права защищены 2010 - 2022 © ООО «СтройЭнергоГРУПП»
+				a(href="")  Политика обработки персональных данных
+				br
+				img(class="contact-rights_brand" src="/images/footer/RBandLogo.svg", alt="RBandLogo")
+
 			.form
 				h3 Оставьте заявку
 
@@ -50,6 +52,5 @@ footer
 							label(class="fw-placeholder checkbox_label" for="checkbox-home") Я ознакомился и согласен с &nbsp #[span(class="load--agreement") правилами]
 
 						button(class="btn" type="submit") Отправить
-
 
 
