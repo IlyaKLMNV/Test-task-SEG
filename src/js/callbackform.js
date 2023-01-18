@@ -85,12 +85,10 @@ const favorWindowEmptyContainer = document.querySelector('.favor-window_empty-co
 
 const showFavorWindow = () => {
 	favorWindow.classList.add('open');
-	console.log('Сработала showFavorWindow')
 }
 
 const closeFavorWindow = () => {
 	favorWindow.classList.remove('open');
-	console.log('Сработала closeFavorWindow')
 }
 
 moreButton.addEventListener('click', showFavorWindow);

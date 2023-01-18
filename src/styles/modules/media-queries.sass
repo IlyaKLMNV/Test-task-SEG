@@ -90,10 +90,6 @@
 				.form
 					form
 						.form_validation
-							// display: flex
-							// justify-content: space-between
-							// margin-bottom: 40px
-
 							.input_name
 								width: 241px
 								height: 50px
@@ -114,17 +110,13 @@
 								width: 100%
 
 						.form_checkbox
-							display: grid
-							grid-template-columns:  300px auto
-							align-items: center
-							position: relative
-							cursor: pointer
+							width: 100%
 
-							.load--agreement
-								position: absolute
-								top: 18px
-								left: 38px
-								text-decoration: underline
+							.form-item--required
+								width: 200px
+
+							.checkbox_label
+								display: block
 
 							.btn
 								width: 216px
@@ -291,9 +283,6 @@
 		&_columns
 			height: 100%
 			display: block
-			b
-
-			&_flex-container
 
 			&_construction
 				height: 190px
@@ -523,15 +512,7 @@
 								width: 100%
 
 						.form_checkbox
-							display: grid
-							grid-template-columns:  174px auto
-
-							.load--agreement
-								position: absolute
-								top: 18px
-								left: 38px
-								text-decoration: underline
-
+							
 							.btn
 								width: 168px
 								height: 48px
@@ -764,8 +745,6 @@
 		&_border-lines
 			.container
 				.about-company_columns
-					&__text
-						
 					&__block-with-numbers
 						.number-text 
 							grid-template-columns: 1fr
@@ -890,14 +869,16 @@
 								width: 100%
 
 						.form_checkbox
-							display: grid
-							grid-template-columns: auto
-							grid-row-gap: 15px
+							width: 100%
+							flex-direction: column
 
-							.load--agreement
-								position: static
+							.form-item--required
+								width: 100%
+								margin-bottom: 12px
+
+							.checkbox_label
+								display: block
 
 							.btn
-								justify-self: center
-								width: 168px
+								width: 216px
 								height: 48px

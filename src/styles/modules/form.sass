@@ -156,39 +156,47 @@
 					flex: 1 0 0
 
 		&_checkbox
-			display: grid
-			grid-template-columns:  300px auto
+			display: flex
 			align-items: center
+			justify-content: space-between
 			position: relative
 			cursor: pointer
 
+
+			.form-item--required
+				display: flex
+
 			.form-item--required._error .checkbox_label::before
 				background: #db2222cc
-				
+
 			.input-checkbox
-				display: none
+				width: 30px
+				height: 30px
+				opacity: 0
+				z-index: 1
+				cursor: pointer
 
 				&:checked + .checkbox_label::after
 					scale: 1
 
 			.checkbox_label
-				display: inline-flex
+				margin-left: 12px
+				display: flex
+				align-items: center
 				width: 100%
 				font-weight: 500
 				font-size: 12px
 				line-height: 18px
 				color: #FFFFFF
-				align-items: center
 				position: relative
-				// margin-left: 10px
 
 			.checkbox_label::before
+				left: -36px
 				content: ""
-				align-self: flex-start
-				flex: 0 0 24px
+				width: 24px
 				height: 24px
+				position: absolute
 				border: 1px solid #FFFFFF
-				margin-right: 12px
 
 			.checkbox_label::after
 				content: ""
@@ -196,7 +204,7 @@
 				height: 22px
 				position: absolute
 				top: 3px
-				left: 3px
+				left: -33px
 				background-image: url("/images/footer/check.svg")
 				background-size: contain
 				background-position: center
