@@ -12,17 +12,28 @@
 @import './modules/form'
 
 
-* 
+*
 	box-sizing: border-box
+	outline-offset: 0
+
+	input:active
+		outline: 0 !important
+		outline-offset: 0 !important
+
+	input:hover
+		outline: 0 !important
+		outline-offset: 0 !important
+
+	input:focus
+		outline: 0 !important
+		outline-offset: 0 !important
 
 html, body
 	font-family: 'Montserrat', sans-serif
-	
 
-.container
-	width: 1118px
-	margin: 0 auto
-
+	.container
+		width: 1118px
+		margin: 0 auto
 
 h1,h2,h3,h4,h5,h6
 	margin: 0
@@ -32,6 +43,24 @@ button
 	border: none
 	padding: 0
 	margin: 0
+	outline: none
+
+input
+	outline: none !important
+
+input::-ms-clear
+	display: none !important
+
+button::-moz-focus-inner
+	padding: 0
+	border:0
+	border-color: transparent
+
+button:active, button:focus
+	outline: none !important
+
+button::-moz-focus-inner
+	border: 0 !important
 
 p
 	padding: 0
